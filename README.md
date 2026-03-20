@@ -1,14 +1,12 @@
 # Iambic Morse Keyer & Trainer
 
+<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/Main%20Picture.jpg" width="50%">
+
 A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 running MicroPython. Designed as a hands-on embedded systems project covering real-time signal generation, hardware input handling, OLED display, settings menus, multi-mode keying, automatic decoding, and inter-device communication.
 
 ---
 
-## Demo Video
-
-<a href="https://youtu.be/7UfE0N1uJJo">
-  <img src="https://img.youtube.com/vi/7UfE0N1uJJo/maxresdefault.jpg" alt="Watch on YouTube" width="600">
-</a>
+## [Demo Video](https://youtu.be/7UfE0N1uJJo)
 
 ---
 
@@ -130,31 +128,36 @@ Enter text using the 4x4 keypad with T9-style multi-tap input (phone keyboard la
 In Telegraph mode, the device transmits the current morse string over UART1 as a UTF-8 newline-terminated message on each loop tick. A companion STM32 device running a separate display driver receives and renders the last 20 characters on an ILI9341 LCD.
 
 ---
+## Cost
 
-## Versioning
+| Item | Qty | Unit | Total |
+|---|---|---|---|
+| ESP32-S3 Dev Board | 1 | $12.00 | $12.00 |
+| Push Buttons (momentary) | 3 | $0.05 | $0.15 |
+| Piezo Buzzer | 1 | $1.00 | $1.00 |
+| LED | 1 | $0.03 | $0.03 |
+| Resistors, wires, protoboard | — | — | $5.00 |
+| SSD1306 OLED 128x64 | 1 | $3.00 | $3.00 |
+| Rotary Encoder | 1 | $3.00 | $3.00 |
+| 4x4 Membrane Keypad | 1 | $5.00 | $5.00 |
+| PCBs (x3) | 3 | — | $15.00 |
+| 3D-printed enclosure | 1 | — | $0.00 |
+| STM32 Microcontroller | 1 | $10.00 | $10.00 |
+| Aux ports / cables | — | — | $13.00 |
+| 2nd ESP32 node (full duplicate) | — | — | $29.13 |
+| Microphone / analog input | 1 | $3.00 | $3.00 |
+| Misc analog sensors | 1 | $2.00 | $2.00 |
+| **Hardware Total** | | | **$101.26** |
+| Software | — | — | $0.00 |
+| Tools | — | — | $0 – $30 |
+| **Grand Total** | | | **~$101 – $131** |
 
-| Version | Milestone |
-|---|---|
-| v0.1 – v0.3 | Basic dit/dah output, LED feedback, OLED display |
-| v1.0 – v1.3 | Modular structure, keying modes, button tracking |
-| v1.4 – v1.5 | Gap detection, letter and word spacing |
-| v1.6 – v1.8 | WPM timing, morse decoder, graphics library |
-| v1.9 – v1.10 | Rotary encoder, full settings menu |
-| v1.11 | Debug mode |
-| v1.12 | Sleep mode and screensaver |
-| v1.13 | Enhanced wake behavior, memory display cleanup |
-
-Full changelog: [`CHANGELOG.md`](CHANGELOG.md)
-
----
-
-## Estimated Cost
-
-| Category | Cost |
-|---|---|
-| Hardware (full build) | ~$101 |
-| Software | $0 (all open source) |
-| Labor | Volunteer |
+> **Notes:**
+> - Unit costs reflect bulk purchasing (50–100 units) — individual retail prices are significantly higher.
+> - Salvaged or borrowed components are not included; actual cost may be lower.
+> - 3D printing assumes university printer access. Outsourced printing would add to the total.
+> - PCB cost assumes overseas fabrication. Any revision spins add another ~$15 per run.
+> - The second ESP32 node (v4.0 network) requires a full hardware duplicate but does not include a second PCB.
 
 ---
 
