@@ -4,11 +4,9 @@
 
 A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 running MicroPython. Designed as a hands-on embedded systems project covering real-time signal generation, hardware input handling, OLED display, settings menus, multi-mode keying, automatic decoding, and inter-device communication.
 
----
+## Demo Video
 
-## [Demo Video](https://youtu.be/7UfE0N1uJJo)
-
----
+See it [here]([url](https://youtu.be/7UfE0N1uJJo))!
 
 ## Features
 
@@ -22,8 +20,6 @@ A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 ru
 - **Debug mode** — live paddle state, encoder pins, keypad input, and memory readout
 - **UART communication** — transmits morse content to an STM32 relay display over serial
 
----
-
 ## Hardware
 
 | Component | Details |
@@ -36,8 +32,6 @@ A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 ru
 | Buzzer | Piezo PWM buzzer |
 | LED | Single external indicator LED |
 | Communication | UART1 to STM32 relay at 115200 baud |
-
----
 
 ## Pin Mapping
 
@@ -57,15 +51,11 @@ A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 ru
 | 5, 6, 15, 17 | Keypad rows |
 | 18, 2, 39, 40 | Keypad columns |
 
----
-
 ## PCB Design
 
 Designed in KiCad. Project files available in [`/PCB Design - KiCad Program/ESP32 Board`](PCB%20Design%20-%20KiCad%20Program/ESP32%20Board).
 
 <img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/PCB%20Design%20-%20KiCad%20Program/ESP32%20Board/PCB Layout.png" width="30%">
-
----
 
 ## Software
 
@@ -77,15 +67,11 @@ Written entirely in **MicroPython**.
 - `keypad` — 4x4 matrix keypad driver
 - `urandom` — screensaver randomization
 
----
-
 ## Project Structure
 
 ```
 main.py          # Full application — hardware init, all functions, main loop
 ```
-
----
 
 ## Settings Menu
 
@@ -101,8 +87,6 @@ Hold the rotary encoder button for 2 seconds to open the settings menu. Short pr
 | About | Scrolling credits page |
 | Reset | Hard resets the device |
 
----
-
 ## Keying Modes
 
 | Mode | Behavior |
@@ -112,13 +96,9 @@ Hold the rotary encoder button for 2 seconds to open the settings menu. Short pr
 | **Ultimatic** | Last-pressed paddle wins when both are held simultaneously |
 | **Straight Key** | Either paddle held produces a continuous tone |
 
----
-
 ## Morse Decoding
 
 Gap detection runs automatically. After a paddle idle period equal to 3x the dit duration, a letter space is inserted and the last morse sequence is decoded. After 7x the dit duration, the space is upgraded to a word break. All thresholds scale with the live WPM setting.
-
----
 
 ## Keyboard Replay Mode
 
@@ -129,13 +109,10 @@ Enter text using the 4x4 keypad with T9-style multi-tap input (phone keyboard la
 | A | Backspace |
 | B | Play current text as morse |
 
----
-
 ## UART / STM32 Integration
 
 In Telegraph mode, the device transmits the current morse string over UART1 as a UTF-8 newline-terminated message on each loop tick. A companion STM32 device running a separate display driver receives and renders the last 20 characters on an ILI9341 LCD.
 
----
 ## Cost
 
 | Item | Qty | Unit | Total |
@@ -167,15 +144,11 @@ In Telegraph mode, the device transmits the current morse string over UART1 as a
 > - PCB cost assumes overseas fabrication. Any revision spins add another ~$15 per run.
 > - The second ESP32 node (v4.0 network) requires a full hardware duplicate but does not include a second PCB.
 
----
-
 ## Author
 
 **Seth Hibpshman**
 Student of Electrical Engineering — Eastern Washington University
 EENG 163: Introduction to Embedded Systems
-
----
 
 ## License
 
