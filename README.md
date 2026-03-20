@@ -1,6 +1,6 @@
 # Iambic Morse Keyer & Trainer
 
-<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/Main%20Picture.jpg" width="50%">
+<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/Main%20Picture.jpg" width="40%">
 
 A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 running MicroPython. Designed as a hands-on embedded systems project covering real-time signal generation, hardware input handling, OLED display, settings menus, multi-mode keying, automatic decoding, and inter-device communication.
 
@@ -56,6 +56,14 @@ A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 ru
 | 18 | UART RX |
 | 5, 6, 15, 17 | Keypad rows |
 | 18, 2, 39, 40 | Keypad columns |
+
+---
+
+## PCB Design
+
+Designed in KiCad. Project files available in [`/PCB Design - KiCad Program/ESP32 Board`](PCB%20Design%20-%20KiCad%20Program/ESP32%20Board).
+
+<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/PCB%20Design%20-%20KiCad%20Program/ESP32%20Board/PCB Layout.png" width="30%">
 
 ---
 
