@@ -6,7 +6,7 @@ A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 ru
 
 ## Demo Video
 
-See it [here]([url](https://youtu.be/7UfE0N1uJJo))!
+See it [here](https://youtu.be/7UfE0N1uJJo)!
 
 ## Features
 
