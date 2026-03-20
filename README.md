@@ -1,6 +1,6 @@
 # Iambic Morse Keyer & Trainer
 
-<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/Main%20Picture.jpg" width="40%">
+<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/Main%20Picture.jpg" width="65%">
 
 A standalone, feature-rich Morse code keyer and trainer built on the ESP32-S3 running MicroPython. Designed as a hands-on embedded systems project covering real-time signal generation, hardware input handling, OLED display, settings menus, multi-mode keying, automatic decoding, and inter-device communication.
 
