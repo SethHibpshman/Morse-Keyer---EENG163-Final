@@ -115,27 +115,27 @@ In Telegraph mode, the device transmits the current morse string over UART1 as a
 
 ## Cost
 
-| Item | Qty | Unit | Total |
-|---|---|---|---|
-| ESP32-S3 Dev Board | 1 | $12.00 | $12.00 |
-| Push Buttons (momentary) | 3 | $0.05 | $0.15 |
-| Piezo Buzzer | 1 | $1.00 | $1.00 |
-| LED | 1 | $0.03 | $0.03 |
-| Resistors, wires, protoboard | — | — | $5.00 |
-| SSD1306 OLED 128x64 | 1 | $3.00 | $3.00 |
-| Rotary Encoder | 1 | $3.00 | $3.00 |
-| 4x4 Membrane Keypad | 1 | $5.00 | $5.00 |
-| PCBs (x3) | 3 | — | $15.00 |
-| 3D-printed enclosure | 1 | — | $0.00 |
-| STM32 Microcontroller | 1 | $10.00 | $10.00 |
-| Aux ports / cables | — | — | $13.00 |
-| 2nd ESP32 node (full duplicate) | — | — | $29.13 |
-| Microphone / analog input | 1 | $3.00 | $3.00 |
-| Misc analog sensors | 1 | $2.00 | $2.00 |
-| **Hardware Total** | | | **$101.26** |
-| Software | — | — | $0.00 |
-| Tools | — | — | $0 – $30 |
-| **Grand Total** | | | **~$101 – $131** |
+| Item                             | Qty | Unit   | Total           |
+| -------------------------------- | --- | ------ | --------------- |
+| ESP32-S3 Dev Board               | 1   | $12.00 | $12.00          |
+| Push Buttons (momentary)         | 3   | $0.05  | $0.15           |
+| Piezo Buzzer                     | 1   | $1.00  | $1.00           |
+| LED                              | 1   | $0.03  | $0.03           |
+| Resistors, wires, protoboard     | —   | —      | $5.00           |
+| SSD1306 OLED 128x64              | 1   | $3.00  | $3.00           |
+| Rotary Encoder                   | 1   | $3.00  | $3.00           |
+| 4x4 Membrane Keypad              | 1   | $5.00  | $5.00           |
+| PCBs (x1)                        | 1   | —      | $5.00           |
+| 3D-printed enclosure             | 1   | —      | $0.00           |
+| STM32 Microcontroller (borrowed) | 1   | $0.00  | $0.00           |
+| Aux ports / cables               | —   | —      | $13.00          |
+| 2nd ESP32 node (full duplicate)  | —   | —      | $29.13          |
+| Microphone / analog input        | 1   | $3.00  | $3.00           |
+| Misc analog sensors              | 1   | $2.00  | $2.00           |
+| **Hardware Total**               |     |        | **$81.34**      |
+| Software                         | —   | —      | $0.00           |
+| Tools                            | —   | —      | $0 – $30        |
+| **Grand Total**                  |     |        | **~$81 – $111** |
 
 > **Notes:**
 > - Unit costs reflect bulk purchasing (50–100 units) — individual retail prices are significantly higher.
