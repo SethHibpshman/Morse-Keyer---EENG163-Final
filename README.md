@@ -138,12 +138,10 @@ In Telegraph mode, the device transmits the current morse string over UART1 as a
 | **Grand Total**                  |     |        | **~$81 – $111** |
 
 > **Notes:**
-> - Unit costs reflect bulk purchasing (50–100 units) — individual retail prices are significantly higher.
-> - Salvaged or borrowed components are not included; actual cost may be lower.
-> - 3D printing assumes university printer access. Outsourced printing would add to the total.
+> - Unit costs reflect bulk purchasing; individual retail prices can be significantly higher.
+> - Some components were salvaged or borrowed; actual cost may be lower.
+> - 3D printing assumes university or personal printer access. Outsourced printing would add to the total.
 > - PCB cost assumes overseas fabrication. Any revision spins add another ~$15 per run.
-> - The second ESP32 node (v4.0 network) requires a full hardware duplicate but does not include a second PCB.
-
 ## Author
 
 **Seth Hibpshman**
